@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Workers Register</title>
+    <link rel="stylesheet" href="{% static 'workers/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'workers/fontawesome/css/all.min.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-10 offset-md-1 mt-5">
+            <div class="jumbotron">
+                <h1 class="display-4">Workers Register</h1>
+                <p class="lead font-italic">Python Django project for implementing CRUD operations</p>
+                <hr class="my-4">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'workers/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'workers/js/popper.min.js' %}"></script>
+    <script src="{% static 'workers/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
